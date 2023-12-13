@@ -7,6 +7,33 @@ body {
     color: #333;
 }
 
+ /*CSS3 Media Type print.*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .profile {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  @media print {
+ 
+    .no-print {
+      display: none;
+    }
+ 
+    body {
+      color: #000;
+    }
+  
+    .profile {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
 header {
     text-align:center;
     padding: 20px;
